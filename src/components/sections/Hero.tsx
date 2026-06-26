@@ -48,9 +48,39 @@ export default function Hero() {
 </p>
 
       <div className="relative -mt-7 flex items-center translate-x-5">
-        <div className="h-14 w-14 rounded-full border border-[#F97316]/60" />
-        <div className="-ml-[1px] h-px w-[260px] bg-[#F97316]/60" />
-      </div>
+
+  {/* Logo Circle */}
+  <div
+  className="
+    relative
+    flex
+    h-16
+    w-16
+    items-center
+    justify-center
+    rounded-full
+    border-2
+    border-[#F97316]/70
+    bg-card
+    ring-4
+    ring-[#F97316]/10
+  "
+>
+
+    <Image
+      src="/logos/jvlogo.ico"   // your logo
+      alt="JV Logo"
+      width={30}
+      height={30}
+      className="object-contain"
+    />
+
+  </div>
+
+  {/* Horizontal Line */}
+  <div className="-ml-[1px] h-px w-[260px] bg-[#F97316]/60" />
+
+</div>
 
       <div className="relative -mt-5 ml-21 flex justify-start gap-38 text-xs uppercase tracking-[0.2em] text-foreground/50">
   <span>SCALE:</span>
