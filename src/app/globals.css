@@ -128,6 +128,33 @@ html {
   transition: transform 0.5s ease;
 }
 
+.shine-text {
+  display: inline-block;
+  font-weight: 700;
 
+  background: linear-gradient(
+    120deg,
+    #F97316 0%,
+    #F97316 40%,
+    #ffffff 50%,
+    #F97316 60%,
+    #F97316 100%
+  );
 
+  background-size: 250% auto;
 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: text-shine 20s linear infinite;
+}
+
+@keyframes text-shine {
+  from {
+    background-position: -250% center;
+  }
+  to {
+    background-position: 250% center;
+  }
+}

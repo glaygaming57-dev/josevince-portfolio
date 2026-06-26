@@ -46,7 +46,7 @@ useEffect(() => {
   return (
     <section id="about" className="text-foreground scroll-mt-0">
 
-      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-14 px-6 py-24 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:py-32">
+      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-8 px-6 py-24 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:py-32">
 
         {/* LEFT */}
         <div className="lg:-translate-y-8">
@@ -54,27 +54,36 @@ useEffect(() => {
             About Me
           </h2>
 
-          <MotionCard className="mt-10 space-y-6 rounded-3xl border border-border bg-card p-7 text-lg leading-9 text-foreground/70 shadow-[0_0_40px_rgba(249,115,22,0.05)] 
-          backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-[#F97316]/50 hover:shadow-[0_0_60px_rgba(249,115,22,0.18)] sm:p-8">
+          <MotionCard
+  className="mt-10 space-y-6 rounded-3xl border border-border bg-card p-7 text-lg leading-9 text-foreground/70 shadow-[0_0_40px_rgba(249,115,22,0.05)]
+  backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-[#F97316]/50 hover:shadow-[0_0_60px_rgba(249,115,22,0.18)] sm:p-8"
+>
+<div className="mb-4 flex items-center text-4xl font-bold tracking-tight sm:text-3.5xl">
+  <span className="text-foreground">
+    Hi, I'm&nbsp;
+  </span>
 
-            <p>
-              Licensed Civil Engineer with knowledge in construction estimation, 
-              quantity take-offs, and project coordination. Skilled in preparing 
-              accurate measurements using digital take-off tools to support estimators 
-              and builders on construction projects.
-            </p>
+  <span className="shine-text">
+    Vince
+  </span>
+</div>
 
-            <p>
-              With a strong foundation in construction estimating, quantity takeoffs, 
-              and project coordination, I am prepared to contribute to construction 
-              projects with accuracy and attention to detail. I value continuous learning, 
-              effective communication, and delivering reliable work that supports successful project outcomes.
-              
-            </p>
+  <p>
+    Licensed Civil Engineer with knowledge in construction estimation,
+    quantity take-offs, and project coordination. Skilled in preparing
+    accurate measurements using digital take-off tools to support
+    estimators and builders on construction projects.
+  </p>
 
+  <p>
+    With a strong foundation in construction estimating, quantity
+    takeoffs, and project coordination, I am prepared to contribute to
+    construction projects with accuracy and attention to detail. I value
+    continuous learning, effective communication, and delivering reliable
+    work that supports successful project outcomes.
+  </p>
 
-
-          </MotionCard>
+</MotionCard>
         </div>
 
         {/* RIGHT */}
