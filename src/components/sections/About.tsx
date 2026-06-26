@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function About() {
   const images = [
-    "/images/gradpic.jpg",
-    "/images/about.jpg",
+    "/images/gradpic.JPG",
+    "/images/about.JPG",
     "/images/engineer.jpg",
   ];
 
