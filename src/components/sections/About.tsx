@@ -65,10 +65,10 @@ useEffect(() => {
             </p>
 
             <p>
-              I enjoy helping construction teams make informed decisions through accurate 
-              estimates and organized project support. As an adaptable professional with 
-              a strong willingness to learn, I am committed to delivering reliable, 
-              detail-oriented work, clear communication, and dependable turnaround times on every project.
+              With a strong foundation in construction estimating, quantity takeoffs, 
+              and project coordination, I am prepared to contribute to construction 
+              projects with accuracy and attention to detail. I value continuous learning, 
+              effective communication, and delivering reliable work that supports successful project outcomes.
               
             </p>
 
