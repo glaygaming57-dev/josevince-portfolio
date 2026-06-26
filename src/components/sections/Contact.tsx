@@ -251,7 +251,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <span className="text-slate-600">•</span>
 
   <a
-    href="https:onlinejobs.ph"
+    href="https://onlinejobs.ph"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
