@@ -194,7 +194,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <div className="flex items-center justify-center">
 
     <Image
-  src="/images/profile.jpg"
+  src="/images/profile.JPG"
   alt="Jose Vince Camagay"
   width={150}
   height={200}
