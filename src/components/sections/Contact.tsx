@@ -219,7 +219,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <div className="flex flex-wrap items-center gap-5 text-sm">
 
   <a
-    href="#"
+    href="https://linkedin.com"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
@@ -235,7 +235,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <span className="text-slate-600">•</span>
 
   <a
-    href="#"
+    href="https://upwork.com"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
@@ -251,7 +251,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <span className="text-slate-600">•</span>
 
   <a
-    href="#"
+    href="https:onlinejobs.ph"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
@@ -275,41 +275,158 @@ relative
 overflow-hidden
 rounded-3xl
 border
-border-[#F97316]/70
+border-[#F97316]/25
 bg-gradient-to-br
 from-card
 to-orange-500/5
 p-8
 shadow-[0_0_50px_rgba(249,115,22,0.06)]
+transition-all
+duration-300
+hover:border-[#F97316]/50
+hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
 "
 >
-  <p className="text-xs uppercase tracking-[0.25em] text-[#F97316]">
-  Consultation Booking
-</p>
+  {/* Background */}
+  <div className="absolute inset-0 -z-10">
 
-<h3 className="mt-4 text-3xl font-bold">
-  Schedule a Meeting
-</h3>
+    <div
+      className="
+      absolute inset-0
+      bg-gradient-to-br
+      from-[#F97316]/10
+      via-transparent
+      to-transparent
+    "
+    />
 
-  <p className="mt-3 text-slate-400">
-    Book a consultation to discuss your project requirements.
-  </p>
+    <div
+      className="
+      absolute -top-20 -right-20
+      h-64 w-64
+      rounded-full
+      bg-[#F97316]/10
+      blur-3xl
+    "
+    />
 
-  <div className="mt-6 flex-1 rounded-2xl border border-[#F97316]/30">
-
-  <div className="text-center">
-
-    <p className="text-xl font-semibold text-[#F97316]">
-      Schedule a Consultation
-    </p>
-
-    <p className="mt-3 text-slate-400">
-      Calendly integration coming soon.
-    </p>
+    <div
+      className="
+      absolute -bottom-24 -left-24
+      h-72 w-72
+      rounded-full
+      bg-blue-500/5
+      blur-3xl
+    "
+    />
 
   </div>
 
+  <p className="text-l uppercase tracking-[0.25em] text-[#F97316]">
+    LET'S CONNECT
+  </p>
+
+<p className="mt-1 max-w-lg leading-7 text-foreground/70">
+  Open to employment opportunities, freelance projects, and
+  professional collaborations. Schedule a meeting at a time that
+  works best for you.
+</p>
+
+{/* Buttons */}
+  <div className="mt-10 space-y-3">
+
+    <a
+      href="https://calendly.com/josevincecamagay/construction-estimation"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+      flex
+      w-full
+      items-center
+      justify-center
+      rounded-xl
+      bg-[#F97316]
+      px-5
+      py-2.5
+      font-semibold
+      text-white
+      transition-all
+      duration-300
+      hover:scale-[1.02]
+      hover:bg-[#ea6a0a]
+      "
+    >
+      Schedule on Calendly →
+    </a>
+
+    <a
+      href="mailto:josevincecamagay@gmail.com"
+      className="
+      flex
+      w-full
+      items-center
+      justify-center
+      rounded-xl
+      border
+      border-[#F97316]/30
+      px-5
+      py-2.5
+      font-medium
+      text-foreground
+      transition-all
+      duration-300
+      hover:border-[#F97316]
+      hover:text-[#F97316]
+      "
+    >
+      Email Me Instead
+    </a>
+
+  </div>
+
+  <div className="mt-14 flex flex-wrap items-center justify-center gap-8 pl-0 text-sm text-foreground/70">
+
+  <div className="flex items-center gap-2">
+    <Image
+      src="/logos/gmeet.webp"
+      alt="Google Meet"
+      width={18}
+      height={18}
+      className="h-5 w-auto object-contain"
+    />
+    <span>Google Meet</span>
+  </div>
+
+  <div className="h-4 w-px bg-[#F97316]/35" />
+
+  <div className="flex items-center gap-2">
+    <Image
+      src="/logos/gmail.png"
+      alt="Response Time"
+      width={18}
+      height={18}
+      className="h-5 w-auto object-contain"
+    />
+    <span>Response within 24 hrs</span>
+  </div>
+
+  <div className="h-4 w-px bg-[#F97316]/55" />
+
+  <div className="flex items-center gap-2">
+    <Image
+      src="/logos/location.png"
+      alt="Timezone"
+      width={18}
+      height={18}
+      className="h-5 w-auto object-contain"
+    />
+    <span>UTC +08:00</span>
+  </div>
+
+
 </div>
+
+
 </MotionCard>
         </div>
       </MotionSection>

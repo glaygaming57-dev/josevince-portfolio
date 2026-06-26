@@ -186,8 +186,8 @@ transition={{
 
         <div>
           
-          <div className="flex flex-wrap gap-4">
-            <Image src="/logos/facebook.png" alt="" width={32} height={32} className="w-10 h-auto" />
+          <div className="flex flex-wrap gap-2.5">
+            <Image src="/logos/facebook.png" alt="" width={32} height={32} className="w-9 h-auto" />
             <Image src="/logos/viber.svg" alt="" width={34} height={34} className="h-10 w-auto" />
             <Image src="/logos/whatsapp.png" alt="" width={36} height={34} className="h-10 w-auto" />
             <Image src="/logos/telegram.png" alt="" width={34} height={34} className="h-10 w-auto" />
