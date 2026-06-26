@@ -46,7 +46,7 @@ useEffect(() => {
   return (
     <section id="about" className="text-foreground scroll-mt-0">
 
-      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-8 px-6 py-24 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:py-32">
+      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-1 px-6 py-24 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:py-32">
 
         {/* LEFT */}
         <div className="lg:-translate-y-8">
