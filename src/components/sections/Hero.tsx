@@ -28,7 +28,7 @@ export default function Hero() {
     {/* IMAGE CARD */}
     <div className="ml-8 w-full max-w-[340px] image-hover-card relative aspect-[4/5] overflow-hidden rounded-[30px]">
       <Image
-  src="/images/profile.JPG"
+  src="/images/profile.jpg"
   alt="Jose Vince Camagay"
   fill
   sizes="(max-width: 1024px) 100vw, 160px"
