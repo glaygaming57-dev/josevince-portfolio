@@ -6,11 +6,11 @@ import Image from "next/image";
 const software = [
   {
     name: "AutoCAD",
-    image: "/logos/Autocad.svg",
+    image: "/logos/autocad.svg",
   },
   {
     name: "Revit",
-    image: "/logos/Revit.svg",
+    image: "/logos/revit.svg",
   },
   {
     name: "STAAD.Pro",
@@ -22,7 +22,7 @@ const software = [
   },
   {
     name: "Bluebeam Revu",
-    image: "/logos/Bluebeam.png",
+    image: "/logos/bluebeam.png",
   },
   {
     name: "MS Excel",
