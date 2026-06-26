@@ -4,7 +4,7 @@ import Image from "next/image";
 const contactMethods = [
   {
     label: "Email",
-    value: "jvc.camagay@gmail.com",
+    value: "josevincecamagay@gmail.com",
     detail: "Project inquiries and estimate requests",
     icon: "/logos/gmail.png",
   },
@@ -129,10 +129,10 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
       />
 
       <a
-        href="mailto:jvc.camagay@gmail.com"
+        href="mailto:josevincecamagay@gmail.com"
         className="text-foreground transition hover:text-[#F97316]"
       >
-        jvc.camagay@gmail.com
+        josevincecamagay@gmail.com
       </a>
     </div>
 
