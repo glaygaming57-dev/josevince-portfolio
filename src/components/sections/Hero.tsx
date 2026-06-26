@@ -43,7 +43,7 @@ export default function Hero() {
 
     <div className="mt-4 ml-2 max-w-[340px]">
 
-      <p className="ml-20 text-lg font-semibold text-[#F97316] inline-block whitespace-nowrap tracking-[0.12em]">
+      <p className="ml-22 text-lg font-semibold text-[#F97316] inline-block whitespace-nowrap tracking-[0.12em]">
   Licensed Civil Engineer
 </p>
 
@@ -70,8 +70,8 @@ export default function Hero() {
     <Image
       src="/logos/jvlogo.ico"   // your logo
       alt="JV Logo"
-      width={30}
-      height={30}
+      width={60}
+      height={60}
       className="object-contain"
     />
 
@@ -82,7 +82,7 @@ export default function Hero() {
 
 </div>
 
-      <div className="relative -mt-5 ml-21 flex justify-start gap-38 text-xs uppercase tracking-[0.2em] text-foreground/50">
+      <div className="relative -mt-5 ml-22 flex justify-start gap-38 text-xs uppercase tracking-[0.2em] text-foreground/50">
   <span>SCALE:</span>
   <span className="relative -left-1">NTS</span>
 </div>
