@@ -25,6 +25,10 @@ const software = [
     image: "/logos/bluebeam.png",
   },
   {
+    name: "IDEA StatiCa",
+    image: "/logos/idea.png",
+  },
+  {
     name: "MS Excel",
     image: "/logos/excel.png",
   },
