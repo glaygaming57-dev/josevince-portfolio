@@ -128,7 +128,7 @@ export default function Hero() {
 <div className="relative z-20 -mt-8 border border-[#F97316]/60 bg-transparent">
 
   {/* GRID */}
-  <div className="grid grid-cols-2 md:grid-cols-4">
+  <div className="grid grid-cols-2 md:grid-cols-[0.25fr_0.3fr_0.25fr_0.2fr]">
 
     {/* DETAILS */}
     <div className="border-r border-[#F97316]/60 p-4">
@@ -165,9 +165,10 @@ hover:-translate-y-1
 
   {/* CV */}
   <a
-    href="/files/Jose-Vince-Camagay-CV.pdf"  //DOWNLOADABLE CV LINK HERE
-    download
-    className="
+  href="https://drive.google.com/file/d/1LMlA6cSkpwlzDj6FRbJvziuTTwb9dePS/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
 group
 relative
 overflow-hidden
@@ -183,15 +184,26 @@ duration-300
 hover:border-[#F97316]
 hover:-translate-y-1
 "
-  >
-    <span className="relative z-10">
-  View CV
-</span>
+>
+  <span className="relative z-10">
+    Preview CV
+  </span>
 
-<div className="absolute inset-0 translate-y-full bg-[#F97316]/15 transition-transform duration-300 group-hover:translate-y-0" />
-  </a>
+  <div className="absolute inset-0 translate-y-full bg-[#F97316]/15 transition-transform duration-300 group-hover:translate-y-0" />
+</a>
 
 </div>
+    </div>
+
+    {/* AVAILABILITY */}
+    <div className="border-r border-[#F97316]/60 p-4 flex flex-col">
+      <p className="text-xs uppercase text-foreground/50">Availability:</p>
+
+      <div className="my-3 h-px w-full bg-[#F97316]/40" />
+
+      <p className="text-[#F97316]">
+        REMOTE | PROJECT-BASED | FULL-TIME
+      </p>
     </div>
 
     {/* BASED IN */}
@@ -201,29 +213,18 @@ hover:-translate-y-1
       <div className="my-3 h-px w-full bg-[#F97316]/40" />
 
       <p className="text-[#F97316]">
-        Taguig City, Philippines
+        TAGUIG CITY, PHILIPPINES
       </p>
     </div>
 
     {/* TIME ZONE */}
-    <div className="border-r border-[#F97316]/60 p-4 flex flex-col">
+    <div className="p-4 flex flex-col">
       <p className="text-xs uppercase text-foreground/50">Time Zone:</p>
 
       <div className="my-3 h-px w-full bg-[#F97316]/40" />
 
       <p className="text-[#F97316]">
         UTC +08:00
-      </p>
-    </div>
-
-    {/* SHEET */}
-    <div className="p-4 flex flex-col">
-      <p className="text-xs uppercase text-foreground/50">Availability:</p>
-
-      <div className="my-3 h-px w-full bg-[#F97316]/40" />
-
-      <p className="text-[#F97316]">
-        REMOTE | PROJECT-BASED
       </p>
     </div>
 
