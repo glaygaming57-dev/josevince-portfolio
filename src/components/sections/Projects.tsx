@@ -53,7 +53,7 @@
                   </span>
                 </div>
 
-                <p className="mt-4 text-sm leading-7 text-slate-400">
+                <p className="mt-4 text-sm leading-7 text-foreground">
                   {project.description}
                 </p>
               </MotionCard>
