@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-[#081328] py-6">
+    <footer className="bg-[#081328] py-6">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-12">
         <span className="text-xl font-semibold tracking-[0.15em] text-white">
           JOSE VINCE CAMAGAY
