@@ -46,7 +46,7 @@ useEffect(() => {
   return (
     <section id="about" className="text-foreground scroll-mt-0">
 
-      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-1 px-6 py-24 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:py-32">
+      <MotionSection className="mx-auto grid min-h-screen max-w-7xl items-center gap-1 px-6 py-24 sm:px-15 lg:grid-cols-[1.2fr_0.8fr] lg:py-32">
 
         {/* LEFT */}
         <div className="lg:-translate-y-8">
@@ -55,7 +55,7 @@ useEffect(() => {
           </h2>
 
           <MotionCard
-  className="mt-10 space-y-6 rounded-3xl border border-border bg-card p-7 text-lg leading-9 text-foreground/70 shadow-[0_0_40px_rgba(249,115,22,0.05)]
+  className="mt-10 space-y-6 rounded-3xl border border-border bg-card p-7 text-xl leading-9 text-foreground/70 shadow-[0_0_40px_rgba(249,115,22,0.05)]
   backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-[#F97316]/50 hover:shadow-[0_0_60px_rgba(249,115,22,0.18)] sm:p-8"
 >
 <div className="mb-4 flex items-center text-4xl font-bold tracking-tight sm:text-3.5xl">
@@ -91,7 +91,7 @@ useEffect(() => {
 
           <MotionCard
             delay={0.1}
-            className="w-full max-w-sm rounded-3xl border border-border bg-card p-4 shadow-xl 
+            className="mt-10 w-full max-w-sm rounded-3xl border border-border bg-card p-4 shadow-xl 
             backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-[#F97316]/50"
           >
 

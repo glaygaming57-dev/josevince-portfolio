@@ -43,7 +43,7 @@ export default function ThemeToggle() {
       <span
         className={`
           relative z-10 transition-all duration-300
-          ${isDark ? "translate-x-2" : "-translate-x-2"}
+          ${isDark ? "-translate-x-2" : "translate-x-2"}
         `}
       >
         {isDark ? <MoonIcon /> : <SunIcon />}
@@ -67,6 +67,7 @@ function SunIcon() {
     >
       <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
     </svg>
+    
   );
 }
 

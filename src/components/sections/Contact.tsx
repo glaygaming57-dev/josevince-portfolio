@@ -32,7 +32,7 @@ export default function Contact() {
           Let&apos;s Build Something Together
         </h2>
 
-        <p className="mt-7 max-w-3xl text-lg leading-9 text-foreground/70">
+        <p className="mt-7 max-w-3xl text-xl leading-9 text-foreground/70">
           Reach out for construction estimating, quantity takeoff, cost
           analysis, and project documentation support.
         </p>
@@ -326,14 +326,14 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
     LET'S CONNECT
   </p>
 
-<p className="mt-1 max-w-lg leading-7 text-foreground/70">
+<p className="mt-1 max-w-lg leading-7 text-lg text-foreground/70">
   Open to employment opportunities, freelance projects, and
   professional collaborations. Schedule a meeting at a time that
   works best for you.
 </p>
 
 {/* Buttons */}
-  <div className="mt-10 space-y-3">
+  <div className="mt-6 space-y-3">
 
     <a
       href="https://calendly.com/josevincecamagay/construction-estimation"
@@ -384,7 +384,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
 
   </div>
 
-  <div className="mt-14 flex flex-wrap items-center justify-center gap-8 pl-0 text-sm text-foreground/70">
+  <div className="mt-12 flex flex-wrap items-center justify-center gap-8 pl-0 text-sm text-foreground/70">
 
   <div className="flex items-center gap-2">
     <Image

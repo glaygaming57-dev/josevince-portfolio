@@ -43,7 +43,7 @@ export default function Hero() {
 
     <div className="mt-4 ml-2 max-w-[340px]">
 
-      <p className="ml-22 text-lg font-semibold text-[#F97316] inline-block whitespace-nowrap tracking-[0.12em]">
+      <p className="ml-22 text-xl font-semibold text-[#F97316] inline-block whitespace-nowrap tracking-[0.08em]">
   Licensed Civil Engineer
 </p>
 
@@ -82,7 +82,7 @@ export default function Hero() {
 
 </div>
 
-      <div className="relative -mt-5 ml-22 flex justify-start gap-38 text-xs uppercase tracking-[0.2em] text-foreground/50">
+      <div className="relative -mt-7 ml-23 flex justify-start gap-38 text-xs uppercase tracking-[0.2em] text-foreground/50">
   <span>SCALE:</span>
   <span className="relative -left-1">NTS</span>
 </div>
@@ -108,13 +108,13 @@ export default function Hero() {
   Engineering Precision from Drawing Review to Cost Analysis.
 </h1>
 
-<p className="mt-8 max-w-4xl text-lg leading-8 text-foreground/70">
+<p className="mt-6 max-w-4xl text-xl leading-8 text-foreground/70">
   Translating design intent into quantifiable construction reality
   through precise estimating, quantity takeoffs, and cost analysis
   for better project decisions.
 </p>
 
-<p className="mt-10 text-lg font-semibold text-[#F97316]">
+<p className="mt-7 text-xl font-semibold text-[#F97316]">
   Quantity Surveying • Construction Estimating • BIM Modeling
 </p>
         
@@ -156,7 +156,7 @@ hover:border-[#F97316]
 hover:-translate-y-1
 "
   >
-    <span className="relative z-10">
+    <span className="font-semibold relative z-10">
   Contact Me
 </span>
 
@@ -185,7 +185,7 @@ hover:border-[#F97316]
 hover:-translate-y-1
 "
 >
-  <span className="relative z-10">
+  <span className="font-semibold relative z-10">
     Preview CV
   </span>
 

@@ -48,7 +48,7 @@ export default function Tools() {
 </h2>
 
 
-<p className="mt-7 max-w-3xl text-lg leading-9 text-foreground/70">
+<p className="mt-7 max-w-3xl text-xl leading-9 text-foreground/70">
   Software used for drawing review, structural coordination, digital
   takeoffs, estimate summaries, and construction documentation.
 </p>
@@ -186,12 +186,13 @@ transition={{
 
         <div>
           
-          <div className="flex flex-wrap gap-2.5">
+          <div className="flex flex-wrap gap-3">
             <Image src="/logos/facebook.png" alt="" width={32} height={32} className="w-9 h-auto" />
             <Image src="/logos/viber.svg" alt="" width={34} height={34} className="h-10 w-auto" />
             <Image src="/logos/whatsapp.png" alt="" width={36} height={34} className="h-10 w-auto" />
             <Image src="/logos/telegram.png" alt="" width={34} height={34} className="h-10 w-auto" />
             <Image src="/logos/zoom.png" alt="" width={34} height={34} className="h-10 w-auto" />
+            <Image src="/logos/canva.png" alt="" width={32} height={34} className="h-10 w-auto" />
           </div>
         </div>
 
@@ -240,6 +241,7 @@ transition={{
             px-4
             py-2
             text-sm
+            font-semibold
             transition-all
             duration-300
             hover:border-orange-500/50
@@ -275,6 +277,7 @@ transition={{
             px-4
             py-2
             text-sm
+            font-semibold
             transition-all
             duration-300
             hover:border-orange-500/50
@@ -310,6 +313,7 @@ transition={{
             px-4
             py-2
             text-sm
+            font-semibold
             transition-all
             duration-300
             hover:border-orange-500/50

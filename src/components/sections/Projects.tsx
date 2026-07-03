@@ -28,8 +28,8 @@
             Projects I Worked On
           </h2>
 
-          <p className="mt-7 max-w-3xl text-lg leading-9 text-foreground/70">
-            Selected estimating, quantity takeoff, and engineering projects.
+          <p className="mt-7 max-w-3xl text-xl leading-9 text-foreground/70">
+            Below are sample projects I have worked on. Project names and client details have been kept confidential.
           </p>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
