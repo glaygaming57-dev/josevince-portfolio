@@ -13,6 +13,10 @@ const software = [
     image: "/logos/revit.svg",
   },
   {
+    name: "iTWO costX",
+    image: "/logos/costx.png",
+  },
+  {
     name: "STAAD.Pro",
     image: "/logos/staad.png",
   },
