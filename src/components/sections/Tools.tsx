@@ -5,24 +5,28 @@ import Image from "next/image";
 
 const software = [
   {
+    name: "PDFXChange",
+    image: "/logos/pdfxchangee.png",
+  },
+  {
     name: "AutoCAD",
     image: "/logos/autocad.svg",
-  },
-  {
-    name: "Revit",
-    image: "/logos/revit.svg",
-  },
-  {
-    name: "iTWO costX",
-    image: "/logos/costx.png",
   },
   {
     name: "STAAD.Pro",
     image: "/logos/staad.png",
   },
   {
+    name: "Revit",
+    image: "/logos/revit.svg",
+  },
+  {
     name: "RCDC",
     image: "/logos/rcdc.png",
+  },
+  {
+    name: "CostX",
+    image: "/logos/costx.webp",
   },
   {
     name: "Bluebeam Revu",
@@ -179,7 +183,7 @@ transition={{
             <Image src="/logos/powerpoint.png" alt="" width={34} height={34} className="h-9 w-auto" />
             <Image src="/logos/teams.png" alt="" width={34} height={34} className="h-8 w-auto" />
             <Image src="/logos/onedrive.webp" alt="" width={34} height={34} className="h-7 w-auto" />
-            <Image src="/logos/outlook.png" alt="" width={34} height={34} className="h-8 w-auto object-contain" />
+            <Image src="/logos/outlook.png" alt="" width={1} height={1} className="h-8 w-auto" />
           </div>
         </div>
 
