@@ -79,4 +79,70 @@ export const projects = [
     "/images/projects/9.png",
   ],
 },
+
+{
+  title: "BIM Takeoff for Architectural & Structure",
+  image: "/images/projects/tas-c.png",
+
+  description:
+    "More projects will be uploaded soon.",
+
+  scope: [
+
+  ],
+
+  output: [
+
+  ],
+
+  software: ["Cubicost TAS-C"],
+
+  gallery: [
+    "/images/projects/tas-c.png",
+  ],
+},
+
+{
+  title: "BIM Takeoff for MEP",
+  image: "/images/projects/tme-c.png",
+
+  description:
+    "More projects will be uploaded soon.",
+
+  scope: [
+
+  ],
+
+  output: [
+
+  ],
+
+  software: ["Cubicost TME-C"],
+
+  gallery: [
+    "/images/projects/tme-c.png",
+  ],
+},
+
+{
+  title: "BIM Takeoff using Revit",
+  image: "/images/projects/revit.png",
+
+  description:
+    "More projects will be uploaded soon.",
+
+  scope: [
+
+  ],
+
+  output: [
+
+  ],
+
+  software: ["Revit", "Excel"],
+
+  gallery: [
+    "/images/projects/revit.png",
+  ],
+},
 ];

@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from "react";
+import ProjectModal from "@/components/projects/ProjectModal";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 
 
 export default function ProjectsPage() {
+
+  const [selectedProject, setSelectedProject] = useState<
+  (typeof projects)[number] | null
+>(null);
   return (
     <main className="min-h-screen bg-background text-foreground">
 
@@ -57,92 +65,145 @@ export default function ProjectsPage() {
 
           ))}
 
-        </div>
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-        {/* PROJECT GRID */}
-
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-          {projects.map((project) => (
-
-            <div
-              key={project.title}
-              className="
-                group
-                overflow-hidden
-                rounded-3xl
-                border
-                border-border
-                bg-card
-                transition
-                duration-300
-                hover:-translate-y-2
-                hover:border-[#F97316]/50
-              "
-            >
-
-              {/* THUMBNAIL */}
-              <div className="relative aspect-[16/10] overflow-hidden">
-
-  <Image
-    src={project.image}
-    alt={project.title}
-    fill
-    className="object-cover transition duration-500 group-hover:scale-105"
-  />
-
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-
-</div>
-
-              <div className="p-6">
-
-                <span className="text-sm text-[#F97316]">
-                  {project.category}
-                </span>
-
-                <h2 className="mt-3 text-2xl font-semibold">
-                  {project.title}
-                </h2>
-
-                <p className="mt-3 text-sm leading-7 text-foreground/70">
-  {project.description}
-</p>
-
-<div className="mt-5 flex flex-wrap gap-2">
-  {project.software.map((tool) => (
-    <span
-      key={tool}
+  {/* REAL PROJECTS */}
+  {projects.map((project, index) => (
+    <div
+      key={`${project.title}-${index}`}
+      onClick={() => setSelectedProject(project)}
       className="
-        rounded-full
+        group
+        cursor-pointer
+        overflow-hidden
+        rounded-3xl
         border
-        border-[#F97316]/30
-        bg-[#F97316]/5
-        px-3
-        py-1
-        text-xs
-        font-medium
-        text-[#F97316]
+        border-border
+        bg-card
+        transition-all
+        duration-300
+        hover:-translate-y-2
+        hover:border-[#F97316]/50
+        hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]
       "
     >
-      {tool}
-    </span>
-  ))}
-</div>
+      {/* IMAGE */}
+      <div className="relative aspect-[16/9] overflow-hidden">
+        <Image
+  src={project.image}
+  alt={project.title}
+  fill
+  sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         33vw"
+  className="object-cover transition duration-500 group-hover:scale-105"
+/>
 
-                <button className="mt-8 text-[#F97316] transition group-hover:translate-x-1">
-                  View Project →
-                </button>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
 
-              </div>
+        <div className="absolute bottom-6 left-6 text-white">
+          <span className="text-sm uppercase tracking-widest text-[#F97316]">
+            {project.category}
+          </span>
 
-            </div>
+          <p
+  className="
+    mt-2
+    text-lg
+    font-semibold
+    transition-all
+    duration-300
+    group-hover:text-[#F97316]
+    group-hover:translate-x-1
+  "
+>
+  View Details →
+</p>
+        </div>
+      </div>
 
+      {/* CONTENT */}
+      <div className="p-6">
+        <h2 className="text-2xl font-semibold">
+          {project.title}
+        </h2>
+
+        <p className="mt-3 text-sm leading-7 text-foreground/70">
+          {project.description}
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {project.software.map((tool) => (
+            <span
+              key={tool}
+              className="
+                rounded-full
+                border
+                border-[#F97316]/30
+                bg-[#F97316]/5
+                px-3
+                py-1
+                text-xs
+                font-medium
+                text-[#F97316]
+              "
+            >
+              {tool}
+            </span>
           ))}
+        </div>
+      </div>
+    </div>
+  ))}
 
+  {/* PLACEHOLDER CARDS */}
+  {[1, 2, 3].map((item) => (
+    <div
+      key={`placeholder-${item}`}
+      className="
+        overflow-hidden
+        rounded-3xl
+        border
+        border-dashed
+        border-border
+        bg-card
+        opacity-80
+      "
+    >
+      <div className="aspect-[16/9] flex items-center justify-center bg-slate-200 dark:bg-slate-800">
+        <span className="text-5xl text-slate-400">+</span>
+      </div>
+
+      <div className="p-6">
+        <h2 className="text-2xl font-semibold">
+          Coming Soon
+        </h2>
+
+        <p className="mt-3 text-sm leading-7 text-foreground/70">
+          More quantity takeoff and estimating projects will be uploaded soon.
+        </p>
+
+        <div className="mt-5">
+          <span className="rounded-full border border-[#F97316]/30 bg-[#F97316]/5 px-3 py-1 text-xs text-[#F97316]">
+            Upcoming
+          </span>
+        </div>
+      </div>
+    </div>
+  ))}
+
+</div>
         </div>
 
       </section>
+
+      {selectedProject && (
+  <ProjectModal
+    project={selectedProject}
+    projects={projects}
+    onClose={() => setSelectedProject(null)}
+  />
+)}
 
     </main>
   );

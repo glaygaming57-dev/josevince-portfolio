@@ -6,7 +6,7 @@ import Image from "next/image";
 const software = [
   {
     name: "PDFXChange",
-    image: "/logos/pdfxchangee.png",
+    image: "/logos/pdfxchange.png",
   },
   {
     name: "AutoCAD",

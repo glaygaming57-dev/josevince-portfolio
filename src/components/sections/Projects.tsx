@@ -27,7 +27,7 @@ const [selectedProject, setSelectedProject] = useState<
           </p>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project, index) => (
+            {projects.slice(0, 3).map((project, index) => (
               <MotionCard
   key={`${project.title}-${index}`}
   delay={index * 0.08}
@@ -69,9 +69,19 @@ const [selectedProject, setSelectedProject] = useState<
       {project.category}
     </span>
 
-    <p className="mt-2 text-lg font-semibold">
-      View Details →
-    </p>
+    <p
+  className="
+    mt-2
+    text-lg
+    font-semibold
+    transition-all
+    duration-300
+    group-hover:text-[#F97316]
+    group-hover:translate-x-1
+  "
+>
+  View Details →
+</p>
 
   </div>
 
