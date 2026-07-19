@@ -17,20 +17,20 @@ const software = [
     image: "/logos/staad.png",
   },
   {
-    name: "Revit",
-    image: "/logos/revit.svg",
-  },
-  {
     name: "RCDC",
     image: "/logos/rcdc.png",
   },
   {
-    name: "CostX",
-    image: "/logos/costx.webp",
+    name: "Revit",
+    image: "/logos/revit.svg",
   },
   {
     name: "Bluebeam Revu",
     image: "/logos/bluebeam.png",
+  },
+  {
+    name: "CostX",
+    image: "/logos/costx.webp",
   },
   {
     name: "IDEA StatiCa",
