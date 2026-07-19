@@ -1,27 +1,7 @@
 import Link from "next/link";
+import { projects } from "@/data/projects";
+import Image from "next/image";
 
-const projects = [
-  {
-    title: "Residential Building",
-    category: "Quantity Takeoff",
-    software: "CostX • Bluebeam • Excel",
-  },
-  {
-    title: "Commercial Building",
-    category: "Construction Estimation",
-    software: "Bluebeam • Excel",
-  },
-  {
-    title: "Structural BIM Project",
-    category: "BIM Coordination",
-    software: "Revit • AutoCAD",
-  },
-  {
-    title: "Tender Documentation",
-    category: "Documentation",
-    software: "PDF-XChange • Excel",
-  },
-];
 
 export default function ProjectsPage() {
   return (
@@ -102,8 +82,18 @@ export default function ProjectsPage() {
             >
 
               {/* THUMBNAIL */}
+              <div className="relative aspect-[16/10] overflow-hidden">
 
-              <div className="aspect-[16/10] bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:24px_24px]" />
+  <Image
+    src={project.image}
+    alt={project.title}
+    fill
+    className="object-cover transition duration-500 group-hover:scale-105"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+</div>
 
               <div className="p-6">
 
@@ -115,9 +105,30 @@ export default function ProjectsPage() {
                   {project.title}
                 </h2>
 
-                <p className="mt-4 text-sm text-foreground/70">
-                  {project.software}
-                </p>
+                <p className="mt-3 text-sm leading-7 text-foreground/70">
+  {project.description}
+</p>
+
+<div className="mt-5 flex flex-wrap gap-2">
+  {project.software.map((tool) => (
+    <span
+      key={tool}
+      className="
+        rounded-full
+        border
+        border-[#F97316]/30
+        bg-[#F97316]/5
+        px-3
+        py-1
+        text-xs
+        font-medium
+        text-[#F97316]
+      "
+    >
+      {tool}
+    </span>
+  ))}
+</div>
 
                 <button className="mt-8 text-[#F97316] transition group-hover:translate-x-1">
                   View Project →

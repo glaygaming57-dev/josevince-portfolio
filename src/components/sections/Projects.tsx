@@ -1,34 +1,18 @@
-  import Link from "next/link";
-import { MotionCard, MotionSection } from "@/components/motion/MotionElements";
+ "use client";
 
-  const featuredProjects = [
-  {
-    title: "Residential Building",
-category: "Quantity Takeoff",
-image: "/images/projects/project1.jpg",
-description:
-"Complete quantity takeoff and BOQ preparation for a multi-storey residential project.",
-software: ["CostX","Bluebeam","Excel"],
-  },
-  {
-    title: "Residential Building",
-category: "Quantity Takeoff",
-image: "/images/projects/project1.jpg",
-description:
-"Complete quantity takeoff and BOQ preparation for a multi-storey residential project.",
-software: ["CostX","Bluebeam","Excel"],
-  },
-  {
-    title: "Residential Building",
-category: "Quantity Takeoff",
-image: "/images/projects/project1.jpg",
-description:
-"Complete quantity takeoff and BOQ preparation for a multi-storey residential project.",
-software: ["CostX","Bluebeam","Excel"],
-  },
-];
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import ProjectModal from "@/components/projects/ProjectModal";
+import { MotionCard, MotionSection } from "@/components/motion/MotionElements";
+import { projects } from "@/data/projects";
 
   export default function Projects() {
+
+const [selectedProject, setSelectedProject] = useState<
+  (typeof projects)[number] | null
+>(null);
+
     return (
       <section id="projects" className="relative z-10 min-h-screen overflow-hidden text-foreground scroll-mt-0">
       
@@ -43,12 +27,17 @@ software: ["CostX","Bluebeam","Excel"],
           </p>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <MotionCard
   key={`${project.title}-${index}`}
   delay={index * 0.08}
+  onClick={() => {
+  console.log("Clicked:", project.title);
+  setSelectedProject(project);
+}}
   className="
     group
+    cursor-pointer
     overflow-hidden
     rounded-3xl
     border
@@ -64,44 +53,64 @@ software: ["CostX","Bluebeam","Excel"],
 >
 
   {/* IMAGE */}
+<div className="relative aspect-[16/10] overflow-hidden">
 
-  <div className="relative aspect-[16/10] overflow-hidden">
+  <img
+    src={project.image}
+    alt={project.title}
+    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+  />
 
-    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:24px_24px]" />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
 
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
+  <div className="absolute bottom-6 left-6 text-white">
 
-    <div className="absolute bottom-6 left-6 translate-y-6 text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+    <span className="text-sm uppercase tracking-widest text-[#F97316]">
+      {project.category}
+    </span>
 
-      <span className="text-sm uppercase tracking-widest text-[#F97316]">
-        Confidential Project
-      </span>
-
-      <p className="mt-2 text-lg font-semibold">
-        View Details →
-      </p>
-
-    </div>
+    <p className="mt-2 text-lg font-semibold">
+      View Details →
+    </p>
 
   </div>
+
+</div>
 
   {/* CONTENT */}
 
   <div className="p-6">
 
-    <span className="text-sm uppercase tracking-widest text-[#F97316]">
-      Quantity Takeoff
-    </span>
+  <h3 className="text-2xl font-semibold">
+    {project.title}
+  </h3>
 
-    <h3 className="mt-3 text-2xl font-semibold">
-      {project.title}
-    </h3>
+  <p className="mt-3 text-sm leading-7 text-foreground/70">
+    {project.description}
+  </p>
 
-    <p className="mt-4 text-sm leading-7 text-foreground/70">
-      {project.description}
-    </p>
-
+  <div className="mt-5 flex flex-wrap gap-2">
+    {project.software.map((tool) => (
+      <span
+        key={tool}
+        className="
+          rounded-full
+          border
+          border-[#F97316]/30
+          bg-[#F97316]/5
+          px-3
+          py-1
+          text-xs
+          font-medium
+          text-[#F97316]
+        "
+      >
+        {tool}
+      </span>
+    ))}
   </div>
+
+</div>
 
 </MotionCard>
             ))}
@@ -115,7 +124,7 @@ from-transparent
 via-background/70
 to-background" />
 </div>
-<div className="-mt-6 relative z-20 flex flex-col items-center gap-4">
+<div className="-mt-15 relative z-20 flex flex-col items-center gap-4">
 
 <p className="text-sm text-foreground/60">
 More projects available
@@ -141,6 +150,15 @@ View All Projects →
 </div>
 
         </MotionSection>
+
+        {selectedProject && (
+  <ProjectModal
+    project={selectedProject}
+    projects={projects}
+    onClose={() => setSelectedProject(null)}
+  />
+)}
+
       </section>
     );
   }
