@@ -33,20 +33,29 @@ export const projects = [
 
     
   {
-  title: "Coming Soon",
+  title: "Roofing Quantity Takeoff",
   category: "Quantity Takeoff",
   image: "/images/projects/q.png",
 
   description:
-    "More projects will be uploaded soon.",
+    "Quantity takeoff for roofing works including roof sheeting, gutters, flashings, fascia boards, and related roofing components.",
 
   scope: [
-
-  ],
+  "Roof Sheeting Quantity Takeoff",
+  "Colorbond & Flashing Measurement",
+  "Gutter Length Measurement",
+  "Fibre Cement Fascia Board Takeoff",
+  "Roof Pitch Classification (10°, 15°, & 20°)",
+  "Quantity Verification from Construction Drawings",
+],
 
   output: [
-
-  ],
+  "Roof Quantity Summary",
+  "Roof Area Calculations",
+  "Linear Measurements (Gutters & Flashings)",
+  "Material Quantity Report",
+  "Cost Estimation Ready Quantities",
+],
 
   software: ["CostX", "Excel", "PDF-XChange"],
 
@@ -59,20 +68,28 @@ export const projects = [
 
     
   {
-  title: "Coming Soon 1",
+  title: "Architectural Fixtures & Joinery",
   category: "Quantity Takeoff",
   image: "/images/projects/7.png",
 
   description:
-    "More projects will be uploaded soon.",
+    "Quantity takeoff covering doors, windows, joinery, cabinetry, sanitary hardware, and other architectural fixtures.",
 
   scope: [
-
-  ],
+  "Doors & Windows",
+  "Joinery & Cabinetry",
+  "Kitchen & Vanity Units",
+  "Wardrobes",
+  "Sanitary Hardware",
+],
 
   output: [
-
-  ],
+  "Quantity Summary",
+  "Door & Window Schedule",
+  "Joinery Measurements",
+  "Material Quantity Report",
+  "Cost Estimation Ready Report",
+],
 
   software: ["CostX", "Excel", "PDF-XChange"],
 
