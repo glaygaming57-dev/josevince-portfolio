@@ -34,6 +34,14 @@ export default function ProjectModal({
   setCurrentImage(0);
 }, [project]);
 
+useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
 
   const nextImage = () =>
     setCurrentImage((currentImage + 1) % currentProject.gallery.length);
@@ -242,7 +250,7 @@ export default function ProjectModal({
 </div>
 
   </div>
-  <div className="mt-10 flex justify-between border-t border-slate-300 pt-6">
+  <div className="flex items-center justify-between px-10 py-5 border-t border-slate-300">
 
   <button
     onClick={() => {
@@ -259,9 +267,19 @@ export default function ProjectModal({
       setCurrentProject(prev);
       setCurrentImage(0);
     }}
-    className="font-medium text-[#F97316] hover:underline"
+    className="
+      flex items-center gap-2
+      rounded-full
+      px-5 py-3
+      font-semibold
+      text-[#F97316]
+      transition-all
+      hover:bg-[#F97316]/10
+      hover:gap-3
+    "
   >
-    ← Previous Project
+    <ChevronLeft size={22} strokeWidth={2.5} />
+    <span>Previous Project</span>
   </button>
 
   <button
@@ -279,9 +297,19 @@ export default function ProjectModal({
       setCurrentProject(next);
       setCurrentImage(0);
     }}
-    className="font-medium text-[#F97316] hover:underline"
+    className="
+      flex items-center gap-2
+      rounded-full
+      px-5 py-3
+      font-semibold
+      text-[#F97316]
+      transition-all
+      hover:bg-[#F97316]/10
+      hover:gap-3
+    "
   >
-    Next Project →
+    <span>Next Project</span>
+    <ChevronRight size={22} strokeWidth={2.5} />
   </button>
 
 </div>

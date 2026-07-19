@@ -114,9 +114,7 @@ export const projects = [
   description:
     "More projects will be uploaded soon.",
 
-  scope: [
-
-  ],
+  scope: [],
 
   output: [
 
