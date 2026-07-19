@@ -2,6 +2,7 @@ export const projects = [
     
   {
   title: "Architectural Quantity Takeoff",
+  category: "Quantity Takeoff",
   image: "/images/projects/1.png",
 
   description:
@@ -33,6 +34,7 @@ export const projects = [
     
   {
   title: "Coming Soon",
+  category: "Quantity Takeoff",
   image: "/images/projects/q.png",
 
   description:
@@ -58,6 +60,7 @@ export const projects = [
     
   {
   title: "Coming Soon 1",
+  category: "Quantity Takeoff",
   image: "/images/projects/7.png",
 
   description:
@@ -82,6 +85,7 @@ export const projects = [
 
 {
   title: "BIM Takeoff for Architectural & Structure",
+  category: "Quantity Takeoff",
   image: "/images/projects/tas-c.png",
 
   description:
@@ -104,6 +108,7 @@ export const projects = [
 
 {
   title: "BIM Takeoff for MEP",
+  category: "Quantity Takeoff",
   image: "/images/projects/tme-c.png",
 
   description:
@@ -126,6 +131,7 @@ export const projects = [
 
 {
   title: "BIM Takeoff using Revit",
+  category: "Quantity Takeoff",
   image: "/images/projects/revit.png",
 
   description:
