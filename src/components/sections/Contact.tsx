@@ -336,9 +336,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <div className="mt-6 space-y-3">
 
     <a
-  href="https://cal.com/josevincecamagay"
-  target="_blank"
-  rel="noopener noreferrer"
+      href="https://cal.com/josevincecamagay"
       target="_blank"
       rel="noopener noreferrer"
       className="
@@ -358,7 +356,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
       hover:bg-[#ea6a0a]
       "
     >
-      Schedule a Meeting →
+      Schedule A Meeting →
     </a>
 
     <a
