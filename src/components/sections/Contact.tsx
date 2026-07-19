@@ -219,7 +219,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <div className="flex flex-wrap items-center gap-5 text-sm">
 
   <a
-    href="https://linkedin.com"
+    href="https://www.linkedin.com/in/josevincecamagay/"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
