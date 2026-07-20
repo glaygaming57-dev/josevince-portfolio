@@ -103,22 +103,23 @@ export const projects = [
 {
   title: "BIM Takeoff for Architectural & Structure",
   category: "Quantity Takeoff",
-  image: "/images/projects/tas-c.png",
+  image: "/images/projects/tascert.png",
 
   description:
-    "More projects will be uploaded soon.",
+    "BIM takeoff for architectural and structural elements using Cubicost TAS-C software, providing accurate quantity measurements and reports.",
 
-  scope: [
+  scope: ["BIM Takeoff for Architectural & Structure",
 
   ],
 
-  output: [
+  output: ["BIM Quantity Summary", "Material Quantity Report", "Cost Estimation Ready Quantities",
 
   ],
 
   software: ["Cubicost TAS-C"],
 
   gallery: [
+    "/images/projects/tascert.png",
     "/images/projects/tas-c.png",
   ],
 },
@@ -126,20 +127,21 @@ export const projects = [
 {
   title: "BIM Takeoff for MEP",
   category: "Quantity Takeoff",
-  image: "/images/projects/tme-c.png",
+  image: "/images/projects/tmecert.png",
 
   description:
-    "More projects will be uploaded soon.",
+    "BIM takeoff for mechanical, electrical, and plumbing (MEP) systems using Cubicost TME-C software, enabling precise quantity extraction and reporting.",
 
-  scope: [],
+  scope: ["BIM Takeoff for MEP"],
 
-  output: [
+  output: ["BIM Quantity Summary", "Material Quantity Report", "Cost Estimation Ready Quantities",
 
   ],
 
   software: ["Cubicost TME-C"],
 
   gallery: [
+    "/images/projects/tmecert.png",
     "/images/projects/tme-c.png",
   ],
 },
@@ -147,10 +149,10 @@ export const projects = [
 {
   title: "BIM Takeoff using Revit",
   category: "Quantity Takeoff",
-  image: "/images/projects/revit.png",
+  image: "/images/projects/comingsoon.jpg",
 
   description:
-    "More projects will be uploaded soon.",
+    "Will be uploaded soon.",
 
   scope: [
 
@@ -163,7 +165,7 @@ export const projects = [
   software: ["Revit", "Excel"],
 
   gallery: [
-    "/images/projects/revit.png",
+    "/images/projects/comingsoon.jpg",
   ],
 },
 ];
