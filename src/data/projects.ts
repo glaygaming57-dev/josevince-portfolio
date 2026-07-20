@@ -103,7 +103,7 @@ export const projects = [
 {
   title: "BIM Takeoff for Architectural & Structure",
   category: "Quantity Takeoff",
-  image: "/images/projects/tascert.png",
+  image: "/images/projects/comingsoon.jpg",
 
   description:
     "BIM takeoff for architectural and structural elements using Cubicost TAS-C software, providing accurate quantity measurements and reports.",
@@ -127,7 +127,7 @@ export const projects = [
 {
   title: "BIM Takeoff for MEP",
   category: "Quantity Takeoff",
-  image: "/images/projects/tmecert.png",
+  image: "/images/projects/comingsoon.jpg",
 
   description:
     "BIM takeoff for mechanical, electrical, and plumbing (MEP) systems using Cubicost TME-C software, enabling precise quantity extraction and reporting.",
