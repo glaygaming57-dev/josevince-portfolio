@@ -235,7 +235,7 @@ hover:shadow-[0_0_70px_rgba(249,115,22,0.12)]
   <span className="text-slate-600">•</span>
 
   <a
-    href="https://upwork.com"
+    href="https://www.upwork.com/freelancers/~0108478075ee6a67ac?mp_source=share"
     className="flex items-center gap-2 transition hover:text-[#F97316]"
   >
     <Image
