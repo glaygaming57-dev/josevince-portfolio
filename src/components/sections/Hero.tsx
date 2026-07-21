@@ -165,7 +165,7 @@ hover:-translate-y-1
 
   {/* CV */}
   <a
-  href="https://drive.google.com/file/d/1F_iU2rxyWmnA4sE8VlmMKKVaxvu1o2Ve/view?usp=sharing"
+  href="https://drive.google.com/file/d/1R3pnvYlFdUSIkrCF29xjsxqnd7AUONHK/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="
